@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michell | Arquitectura & Diseño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- CURSOR PERSONALIZADO -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- NAVEGACIÓN -->
+    <nav id="navbar">
+      <div class="contenedor">
+        <a href="#inicio" class="nav__logo">
+          <img src="images/Michell.png" alt="Logo" class="nav__logo-img" />
+          <span class="nav__logo-texto">MICHELL DESIGN</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#cotizador">Cotizar</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#inicio" class="mobile-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="mobile-link">Sobre mí</a></li>
+        <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+        <li><a href="#proyectos" class="mobile-link">Proyectos</a></li>
+        <li><a href="#cotizador" class="mobile-link">Cotizar</a></li>
+        <li><a href="#resenas" class="mobile-link">Reseñas</a></li>
+        <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- ===================== 1. HERO ===================== -->
+    <section id="inicio" class="hero">
+      <div class="hero__bg-lines"></div>
+      <div class="contenedor">
+        <div class="hero__contenido reveal-up">
+          <p class="hero__eyebrow">Arquitectura & Diseño</p>
+          <h1 class="hero__titulo">
+            <span class="hero__titulo-line">MICHELL</span>
+            <span class="hero__titulo-line hero__titulo-line--accent">DESIGN</span>
+          </h1>
+          <p class="hero__descripcion">
+            Planos arquitectónicos y renders para proyectos de 1 y 2 plantas.<br/>
+            Diseño con propósito, estética y precisión.
+          </p>
+          <div class="hero__botones">
+            <a href="#proyectos" class="btn btn--primario">
+              <span>Ver proyectos</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#cotizador" class="btn btn--secundario">Cotizar proyecto</a>
+          </div>
+        </div>
+        <div class="hero__stats reveal-up" style="--delay: 0.3s">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="20">0</span>
+            <span class="hero__stat-label">Proyectos</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="5">0</span>
+            <span class="hero__stat-label">Estrellas</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="100">0</span>
+            <span class="hero__stat-label">% Satisfacción</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. SOBRE MÍ ===================== -->
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="contenedor">
+        <div class="sobre-mi__contenido">
+          <div class="sobre-mi__imagen reveal-left">
+            <div class="sobre-mi__imagen-wrap">
+              <img src="images/Michell.png" alt="Michell" />
+              <div class="sobre-mi__imagen-deco"></div>
+            </div>
+          </div>
+          <div class="sobre-mi__texto reveal-right">
+            <p class="seccion__eyebrow">Quién soy</p>
+            <h2 class="seccion__titulo">Sobre Mí</h2>
+            <p>
+              Soy estudiante de los últimos semestres de arquitectura y
+              ofrezco servicios de diseño arquitectónico y digitalización de
+              planos. Mi enfoque combina funcionalidad, estética y atención a
+              las necesidades de cada proyecto.
+            </p>
+            <div class="sobre-mi__tags">
+              <span>AutoCAD</span>
+              <span>SketchUp</span>
+              <span>Renders 3D</span>
+              <span>Revit</span>
+            </div>
+            <a href="#contacto" class="btn btn--primario" style="margin-top:2rem">Trabajar juntos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SERVICIOS ===================== -->
+    <section id="servicios" class="servicios">
+      <div class="contenedor">
+        <div class="seccion__header reveal-up">
+          <p class="seccion__eyebrow">Lo que ofrezco</p>
+          <h2 class="seccion__titulo">Servicios</h2>
+        </div>
+        <div class="servicios__grid">
+          <div class="servicio__tarjeta reveal-up" style="--delay:0.1s">
+            <div class="servicio__icono">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="5" width="30" height="30" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M5 15h30M15 5v30" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="servicio__nombre">Planos arquitectónicos</h3>
+            <p class="servicio__descripcion">Diseño de planos para viviendas de una y dos plantas con detalle técnico y precisión.</p>
+          </div>
+          <div class="servicio__tarjeta reveal-up" style="--delay:0.2s">
+            <div class="servicio__icono">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 30L15 10l10 12 7-8 8 16H5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__nombre">Cortes y fachadas</h3>
+            <p class="servicio__descripcion">Representación técnica para comprender la estructura y estética del proyecto.</p>
+          </div>
+          <div class="servicio__tarjeta reveal-up" style="--delay:0.3s">
+            <div class="servicio__icono">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="8" width="30" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 20l5 5 10-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__nombre">Renders 3D</h3>
+            <p class="servicio__descripcion">Visualización 3D realista para presentar el proyecto antes de su construcción.</p>
+          </div>
+          <div class="servicio__tarjeta reveal-up" style="--delay:0.4s">
+            <div class="servicio__icono">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 32V12M8 12L20 8l12 4v20M8 12l12 4 12-4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__nombre">Instalaciones</h3>
+            <p class="servicio__descripcion">Propuesta de distribución de instalaciones dentro del proyecto arquitectónico.</p>
+          </div>
+          <div class="servicio__tarjeta reveal-up" style="--delay:0.5s">
+            <div class="servicio__icono">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 5L5 15v20h10V25h10v10h10V15L20 5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__nombre">Estructura</h3>
+            <p class="servicio__descripcion">Desarrollo estructural básico para proyectos arquitectónicos residenciales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PROYECTOS ===================== -->
+    <section id="proyectos" class="proyectos">
+      <div class="contenedor">
+        <div class="seccion__header reveal-up">
+          <p class="seccion__eyebrow">Mi trabajo</p>
+          <h2 class="seccion__titulo">Proyectos</h2>
+        </div>
+        <div class="proyectos__grid">
+
+          <article class="proyecto__tarjeta reveal-up" style="--delay:0.1s">
+            <div class="proyecto__imagen-wrap">
+              <img src="images/Proyecto1.jpg" alt="Proyecto 1" class="proyecto__imagen" />
+              <div class="proyecto__overlay">
+                <div class="proyecto__overlay-contenido">
+                  <p class="proyecto__overlay-tag">Render exterior · Plano arquitectónico</p>
+                  <h3 class="proyecto__overlay-titulo">Casa Horizonte</h3>
+                  <p class="proyecto__overlay-desc">Vivienda unifamiliar de dos plantas con fachada minimalista. Se desarrollaron planos arquitectónicos completos, renders exteriores e interiores y distribución de instalaciones hidráulicas y eléctricas.</p>
+                  <div class="proyecto__overlay-meta">
+                    <span>📐 180 m²</span>
+                    <span>🏠 2 plantas</span>
+                    <span>✨ Render 3D</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto__info">
+              <h3 class="proyecto__nombre">Casa Horizonte</h3>
+              <p class="proyecto__tipo">Render exterior · Plano arquitectónico</p>
+              <a href="#contacto" class="btn btn--primario">Ver más</a>
+            </div>
+          </article>
+
+          <article class="proyecto__tarjeta reveal-up" style="--delay:0.2s">
+            <div class="proyecto__imagen-wrap">
+              <img src="images/Proyecto2.jpg" alt="Proyecto 2" class="proyecto__imagen" />
+              <div class="proyecto__overlay">
+                <div class="proyecto__overlay-contenido">
+                  <p class="proyecto__overlay-tag">Render interior · Fachada</p>
+                  <h3 class="proyecto__overlay-titulo">Residencia Serena</h3>
+                  <p class="proyecto__overlay-desc">Proyecto residencial de una planta con amplio jardín. Se realizaron renders interiores de sala, cocina y recámara principal, además de fachada frontal con acabados en piedra y madera.</p>
+                  <div class="proyecto__overlay-meta">
+                    <span>📐 120 m²</span>
+                    <span>🏠 1 planta</span>
+                    <span>🎨 Fachada</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto__info">
+              <h3 class="proyecto__nombre">Residencia Serena</h3>
+              <p class="proyecto__tipo">Render interior · Fachada</p>
+              <a href="#contacto" class="btn btn--primario">Ver más</a>
+            </div>
+          </article>
+
+          <article class="proyecto__tarjeta reveal-up" style="--delay:0.3s">
+            <div class="proyecto__imagen-wrap">
+              <img src="images/Proyecto3.jpg" alt="Proyecto 3" class="proyecto__imagen" />
+              <div class="proyecto__overlay">
+                <div class="proyecto__overlay-contenido">
+                  <p class="proyecto__overlay-tag">Planos técnicos</p>
+                  <h3 class="proyecto__overlay-titulo">Villa Norte</h3>
+                  <p class="proyecto__overlay-desc">Conjunto de planos técnicos para vivienda de dos plantas: planta baja, planta alta, cortes longitudinales y transversales, fachadas y plano de instalaciones.</p>
+                  <div class="proyecto__overlay-meta">
+                    <span>📐 200 m²</span>
+                    <span>🏠 2 plantas</span>
+                    <span>📋 Planos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto__info">
+              <h3 class="proyecto__nombre">Villa Norte</h3>
+              <p class="proyecto__tipo">Planos técnicos completos</p>
+              <a href="#contacto" class="btn btn--primario">Ver más</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PROCESO ===================== -->
+    <section id="proceso" class="proceso">
+      <div class="contenedor">
+        <div class="seccion__header reveal-up">
+          <p class="seccion__eyebrow">Cómo trabajo</p>
+          <h2 class="seccion__titulo">Proceso de trabajo</h2>
+        </div>
+        <ol class="proceso__pasos">
+          <li class="proceso__paso reveal-up" style="--delay:0.1s">
+            <span class="proceso__numero">01</span>
+            <h4>Análisis</h4>
+            <p>Se analiza el proyecto, necesidades y requerimientos del cliente.</p>
+          </li>
+          <li class="proceso__paso reveal-up" style="--delay:0.2s">
+            <span class="proceso__numero">02</span>
+            <h4>Diseño</h4>
+            <p>Se desarrolla el diseño arquitectónico con propuestas iniciales.</p>
+          </li>
+          <li class="proceso__paso reveal-up" style="--delay:0.3s">
+            <span class="proceso__numero">03</span>
+            <h4>Presentación</h4>
+            <p>Se entregan planos, renders y documentación técnica.</p>
+          </li>
+          <li class="proceso__paso reveal-up" style="--delay:0.4s">
+            <span class="proceso__numero">04</span>
+            <h4>Ajustes</h4>
+            <p>Revisiones hasta que el cliente esté completamente satisfecho.</p>
+          </li>
+        </ol>
+        <div class="proceso__pago reveal-up" style="--delay:0.5s">
+          <div class="proceso__pago-item">
+            <span class="proceso__pago-porcentaje">50%</span>
+            <span class="proceso__pago-label">Al iniciar el proyecto</span>
+          </div>
+          <div class="proceso__pago-separador">+</div>
+          <div class="proceso__pago-item">
+            <span class="proceso__pago-porcentaje">50%</span>
+            <span class="proceso__pago-label">Al entregar el proyecto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. COTIZADOR ===================== -->
+    <section id="cotizador" class="cotizador">
+      <div class="contenedor">
+        <div class="seccion__header reveal-up">
+          <p class="seccion__eyebrow">Precios estimados</p>
+          <h2 class="seccion__titulo">Cotizador</h2>
+        </div>
+        <div class="cotizador__contenido reveal-up" style="--delay:0.2s">
+          <div class="cotizador__form">
+            <div class="cotizador__grupo">
+              <label class="cotizador__label">Tipo de servicio</label>
+              <div class="cotizador__opciones">
+                <button class="cotizador__opcion activo" data-tipo="planos">Planos arquitectónicos</button>
+                <button class="cotizador__opcion" data-tipo="renders">Renders 3D</button>
+                <button class="cotizador__opcion" data-tipo="completo">Proyecto completo</button>
+              </div>
+            </div>
+
+            <div class="cotizador__grupo">
+              <label class="cotizador__label">Número de plantas</label>
+              <div class="cotizador__opciones">
+                <button class="cotizador__opcion activo" data-plantas="1">1 planta</button>
+                <button class="cotizador__opcion" data-plantas="2">2 plantas</button>
+              </div>
+            </div>
+
+            <div class="cotizador__grupo">
+              <label class="cotizador__label">
+                Metros cuadrados: <strong id="m2Display">100 m²</strong>
+              </label>
+              <input type="range" min="40" max="400" value="100" step="10" class="cotizador__slider" id="m2Slider" />
+              <div class="cotizador__slider-labels">
+                <span>40 m²</span>
+                <span>400 m²</span>
+              </div>
+            </div>
+
+            <div class="cotizador__grupo">
+              <label class="cotizador__label">Extras (opcional)</label>
+              <div class="cotizador__checks">
+                <label class="cotizador__check">
+                  <input type="checkbox" data-extra="instalaciones" /> Instalaciones (+$800)
+                </label>
+                <label class="cotizador__check">
+                  <input type="checkbox" data-extra="estructura" /> Estructura (+$600)
+                </label>
+                <label class="cotizador__check">
+                  <input type="checkbox" data-extra="urgente" /> Entrega urgente (+30%)
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="cotizador__resultado">
+            <div class="cotizador__precio-wrap">
+              <p class="cotizador__precio-label">Estimado desde</p>
+              <p class="cotizador__precio" id="precioEstimado">$2,500</p>
+              <p class="cotizador__precio-moneda">MXN</p>
+            </div>
+            <p class="cotizador__nota">* Precio estimado. El costo final depende de los detalles específicos del proyecto.</p>
+            <a href="https://wa.me/527293677433?text=Hola%20Michell%2C%20me%20interesa%20cotizar%20un%20proyecto" target="_blank" class="btn btn--whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Solicitar cotización
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. RESEÑAS ===================== -->
+    <section id="resenas" class="resenas">
+      <div class="contenedor">
+        <div class="seccion__header reveal-up">
+          <p class="seccion__eyebrow">Lo que dicen</p>
+          <h2 class="seccion__titulo">Reseñas</h2>
+        </div>
+
+        <div class="resenas__stats reveal-up" style="--delay:0.1s">
+          <div class="resenas__promedio">
+            <span class="resenas__promedio-num" id="promedioNum">4.9</span>
+            <div class="resenas__estrellas-grandes" id="estrellasGrandes">
+              <span class="estrella activo">★</span>
+              <span class="estrella activo">★</span>
+              <span class="estrella activo">★</span>
+              <span class="estrella activo">★</span>
+              <span class="estrella activo">★</span>
+            </div>
+            <p>Basado en <span id="totalResenas">3</span> reseñas</p>
+          </div>
+        </div>
+
+        <!-- Reseñas existentes -->
+        <div class="resenas__lista" id="resenasList">
+          <div class="resena__tarjeta reveal-up" style="--delay:0.1s">
+            <div class="resena__header">
+              <div class="resena__avatar">JR</div>
+              <div>
+                <p class="resena__nombre">Juan Ramírez</p>
+                <div class="resena__estrellas">
+                  <span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span>
+                </div>
+              </div>
+              <span class="resena__fecha">Hace 2 semanas</span>
+            </div>
+            <p class="resena__texto">Excelente trabajo, los planos quedaron muy bien detallados y el render superó mis expectativas. Muy puntual con los tiempos de entrega.</p>
+          </div>
+
+          <div class="resena__tarjeta reveal-up" style="--delay:0.2s">
+            <div class="resena__header">
+              <div class="resena__avatar">ML</div>
+              <div>
+                <p class="resena__nombre">María López</p>
+                <div class="resena__estrellas">
+                  <span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella medio">★</span>
+                </div>
+              </div>
+              <span class="resena__fecha">Hace 1 mes</span>
+            </div>
+            <p class="resena__texto">Muy profesional y con mucho talento. Me ayudó a visualizar mi casa antes de construir. Recomiendo totalmente el servicio.</p>
+          </div>
+
+          <div class="resena__tarjeta reveal-up" style="--delay:0.3s">
+            <div class="resena__header">
+              <div class="resena__avatar">CA</div>
+              <div>
+                <p class="resena__nombre">Carlos Acosta</p>
+                <div class="resena__estrellas">
+                  <span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span><span class="estrella activo">★</span>
+                </div>
+              </div>
+              <span class="resena__fecha">Hace 2 meses</span>
+            </div>
+            <p class="resena__texto">Solicité los planos y fachada de mi proyecto. Todo impecable, muy detallado y con excelente comunicación durante el proceso.</p>
+          </div>
+        </div>
+
+        <!-- Formulario nueva reseña -->
+        <div class="resena__form reveal-up" style="--delay:0.4s">
+          <h3 class="resena__form-titulo">Deja tu reseña</h3>
+          <div class="resena__form-estrellas">
+            <p>Tu calificación:</p>
+            <div class="estrellas__interactivas" id="estrellasForm">
+              <span class="estrella-form" data-val="1">★</span>
+              <span class="estrella-form" data-val="2">★</span>
+              <span class="estrella-form" data-val="3">★</span>
+              <span class="estrella-form" data-val="4">★</span>
+              <span class="estrella-form" data-val="5">★</span>
+            </div>
+          </div>
+          <input type="text" class="resena__input" id="resenaName" placeholder="Tu nombre" maxlength="40" />
+          <textarea class="resena__textarea" id="resenaText" placeholder="Cuéntanos sobre tu experiencia..." maxlength="300" rows="4"></textarea>
+          <div class="resena__form-footer">
+            <span class="resena__char-count" id="charCount">0 / 300</span>
+            <button class="btn btn--primario" id="enviarResena">Publicar reseña</button>
+          </div>
+          <p class="resena__form-msg" id="formMsg"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 8. CONTACTO ===================== -->
+    <section id="contacto" class="contacto">
+      <div class="contenedor">
+        <div class="seccion__header reveal-up">
+          <p class="seccion__eyebrow">Hablemos</p>
+          <h2 class="seccion__titulo">Contacto</h2>
+        </div>
+        <div class="contacto__contenido reveal-up" style="--delay:0.2s">
+          <ul class="contacto__lista">
+            <li class="contacto__item">
+              <div class="contacto__icono">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <span class="contacto__etiqueta">WhatsApp</span>
+                <a href="https://wa.me/527293677433" target="_blank" class="btn btn--whatsapp" style="margin-top:0.4rem">Mensaje Directo</a>
+              </div>
+            </li>
+            <li class="contacto__item">
+              <div class="contacto__icono">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              </div>
+              <div>
+                <span class="contacto__etiqueta">Correo</span>
+                <a href="mailto:jennyfertello2804@gmail.com" class="contacto__enlace">jennyfertello2804@gmail.com</a>
+              </div>
+            </li>
+            <li class="contacto__item">
+              <div class="contacto__icono">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <span class="contacto__etiqueta">Instagram</span>
+                <a href="https://instagram.com/mich_3804" target="_blank" class="contacto__enlace">@mich_3804</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="footer__contenido">
+          <p class="footer__brand">MICHELL DESIGN</p>
+          <p class="footer__copy">&copy; 2025 Michell | Arquitectura & Diseño</p>
+          <div class="footer__links">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="animations.js"></script>
+  </body>
+</html>
